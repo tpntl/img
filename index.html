@@ -1,0 +1,22 @@
+ 
+ <html>
+ <body>
+ </body>
+ 
+ </html>
+ 
+ <script>
+
+  
+  //http://localhost:8080/import.html?test=0107375317.jpg,nome1,0107375317.jpg,nome2
+	const searchParams = new URLSearchParams(window.location.search);
+	//console.log(searchParams.get('test'));
+	var myWords = searchParams.get('img').split(",");
+	//console.log("parametro recebido"+myWords);
+	
+	window.location.href = "https://cnp.tapetessaocarlos.com.br:7004/"+myWords+".jpg";
+	
+	
+	
+	
+  </script>
